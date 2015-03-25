@@ -3,7 +3,7 @@ ruby '2.2.1'
 
 gem 'rails', '4.2.1'
 # Use mysql as the database for Active Record
-gem 'mysql2'
+# gem 'mysql2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -14,10 +14,8 @@ group :doc do
   gem 'sdoc', '~> 0.4.0', require: false
 end
 
-group :development, :test do
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+group :development do
+  gem 'sqlite3'
 end
 group :production do
   gem 'pg', '0.15.1'
